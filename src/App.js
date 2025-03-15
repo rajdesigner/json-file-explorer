@@ -77,7 +77,12 @@ export default function App() {
             ...node,
             children: [
               ...node.children,
-              { id: "123", isFolder: true, children: [], name: name },
+              {
+                id: Date.now().toString(),
+                isFolder: true,
+                children: [],
+                name: name,
+              },
             ],
           };
         }
